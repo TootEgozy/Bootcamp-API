@@ -1,0 +1,3 @@
+# Boothcamp API README
+
+## Workflow

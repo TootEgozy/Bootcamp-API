@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1615453233282" clover="3.2.0">
-  <project timestamp="1615453233283" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
+<coverage generated="1615501212149" clover="3.2.0">
+  <project timestamp="1615501212150" name="All files">
+    <metrics statements="15" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="2" elements="19" coveredelements="15" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="script.js" path="C:\Dropbox\TootEgozy\AppleSeeds\Exercises\WeekendAssignments\Bootcamp-API\script.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="2" count="1" type="stmt"/>
+      <metrics statements="15" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="45" count="0" type="stmt"/>
+      <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="61" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

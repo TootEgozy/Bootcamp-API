@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+body {
+  background-image: url("images/background.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+  transition: all 0.2s;
+}
+
+.table-container {
+  width: fit-content;
+  box-shadow: 0px 0px 40px rgb(73, 73, 73);
+  margin-bottom: 5rem;
+}
+#table {
+  border-collapse: collapse;
+  padding: 3rem;
+  font-weight: 400;
+}
+
+th {
+  padding: 3rem 1rem 1rem 0.5rem;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+td {
+  padding: 0.5rem;
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(238, 238, 238);
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+tr:nth-child(1) {
+  background-color: rgba(241, 250, 252, 0.4);
+}
+
+tr:nth-child(2) {
+  box-shadow: 0px 0 20px 0px rgb(109, 109, 109);
+}
+
+/*************************************************/
+/*             table input filed                */
+/***********************************************/
+.first-name-input,
+.last-name-input,
+.capsule-input,
+.age-input,
+.city-input,
+.gender-input,
+.hobby-input {
+  width: 5rem;
+  padding: 0.3rem;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgb(160, 160, 160);
+  transition: all 0.5s;
+}
+
+/*************************************************/
+/*             buttons                          */
+/***********************************************/
+.edit {
+  color: white;
+  background-color: #2db2fe;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.delete {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.set {
+  color: white;
+  background-color: rgb(0, 168, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.cancel {
+  color: white;
+  background-color: rgb(255, 68, 68);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.reload {
+  justify-self: flex-end;
+  transform: translateX(20rem);
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgb(196, 251, 253);
+}
+
+.reload:active {
+  justify-self: flex-end;
+  transform: translateX(20rem);
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgb(84, 200, 204);
+}
+
+/*************************************************/
+/*             header                           */
+/***********************************************/
+
+.header {
+  min-height: 100px;
+  color: white;
+  background-color: #141d3d;
+  width: 60vw;
+  margin: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: left;
+  padding: 2rem;
+  border-radius: 2px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 450;
+  margin-right: 1rem;
+}
+
+.search-input {
+  padding: 0.2rem;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+}
+
+.search-selection {
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.city:hover:before {
+  content: attr(data-value);
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  width: fit-content;
+  position: absolute;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transform: translateY(-2rem);
+}
